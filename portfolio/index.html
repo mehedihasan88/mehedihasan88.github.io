@@ -46,7 +46,7 @@
         <div class="d-flex flex-column">
 
             <div class="profile">
-                <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+                <img src="assets/img/me.gif" alt="" class="img-fluid rounded-circle">
                 <h1 class="text-light"><a href="index.html">Mehedi Hasan</a></h1>
                 <div class="social-links mt-3 text-center">
                     <a href="https://www.facebook.com/not.mehedii" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -340,7 +340,7 @@
             }
         }).then(response => {
             if (response.ok) {
-                status.innerHTML = "Thank You For Reaching Out";
+                status.innerHTML = "Thank You For Reaching Out.";
                 form.reset()
             } else {
                 response.json().then(data => {
