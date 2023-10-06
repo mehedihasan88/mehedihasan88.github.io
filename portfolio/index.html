@@ -340,19 +340,19 @@
             }
         }).then(response => {
             if (response.ok) {
-                status.innerHTML = "Thank You For Reaching Out.";
+                status.innerHTML = "<p style=\"color:green;\"><b>Thank You For Reaching Out.</b></p>";
                 form.reset()
             } else {
                 response.json().then(data => {
                     if (Object.hasOwn(data, 'errors')) {
                         status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
                     } else {
-                        status.innerHTML = "Oops! There was a problem sending your email!"
+                        status.innerHTML = "<p style=\"color:red;\"><b>Something went wrong! Try Again!</b></p>"
                     }
                 })
             }
         }).catch(error => {
-            status.innerHTML = "Oops! There was a problem sending your email!"
+            status.innerHTML = "<p style=\"color:red;\"><b>Something went wrong! Try Again!</b></p>"
         });
     }
     form.addEventListener("submit", handleSubmit)
