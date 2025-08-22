@@ -445,23 +445,21 @@ section:nth-of-type(even) {
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
-    border: 1px solid #ddd; /* NEW: subtle border for each card */
+    transition: box-shadow 0.3s ease;
+    border: 1px solid #ddd;
 }
 
-/* Odd items (1st, 3rd, 5th...) */
 .services .icon-box:nth-child(odd) {
-    background-color: #f8f9fa; /* light gray */
+    background-color: #f8f9fa;
 }
 
-/* Even items (2nd, 4th, 6th...) */
 .services .icon-box:nth-child(even) {
-    background-color: #ffffff; /* white */
+    background-color: #ffffff;
 }
 
 /* Hover effect */
 .services .icon-box:hover {
-    border-color: #149ddd;     /* highlight border on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .services .icon {
@@ -471,10 +469,9 @@ section:nth-of-type(even) {
     justify-content: center;
     width: 54px;
     height: 54px;
-    background: #149ddd;
     border-radius: 50%;
     transition: 0.5s;
-    border: 1px solid #149ddd;
+    border: 2px solid #149ddd;
 }
 
 .services .icon i {
@@ -483,11 +480,11 @@ section:nth-of-type(even) {
     line-height: 0;
 }
 
-.services .icon-box:hover .icon {
+.services .icon-box .icon {
     background: #fff;
 }
 
-.services .icon-box:hover .icon i {
+.services .icon-box .icon i {
     color: #149ddd;
 }
 
