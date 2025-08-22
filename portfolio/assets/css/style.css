@@ -461,7 +461,6 @@ section:nth-of-type(even) {
 
 /* Hover effect */
 .services .icon-box:hover {
-    background-color: #e9ecef; /* slightly darker on hover */
     border-color: #149ddd;     /* highlight border on hover */
 }
 
