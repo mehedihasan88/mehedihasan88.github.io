@@ -325,15 +325,18 @@ section {
 
 .section-title {
     padding-bottom: 30px;
+    text-align: center;
+
 }
 
 .section-title h2 {
-    font-size: 32px;
+    font-size: 26px;
     font-weight: bold;
     margin-bottom: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     position: relative;
     color: #173b6c;
+    display: inline-block;
 }
 
 .section-title h2::after {
@@ -351,12 +354,20 @@ section {
     margin-bottom: 0;
 }
 
+section:nth-of-type(odd) {
+    background-color: #ffffff; /* white for odd sections */
+}
+
+section:nth-of-type(even) {
+    background-color: #f5f8fd; /* light blue/gray for even sections */
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about .content h3 {
     font-weight: 700;
-    font-size: 26px;
+    font-size: 23px;
     color: #173b6c;
 }
 
@@ -432,6 +443,26 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
     margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    border: 1px solid #ddd; /* NEW: subtle border for each card */
+}
+
+/* Odd items (1st, 3rd, 5th...) */
+.services .icon-box:nth-child(odd) {
+    background-color: #f8f9fa; /* light gray */
+}
+
+/* Even items (2nd, 4th, 6th...) */
+.services .icon-box:nth-child(even) {
+    background-color: #ffffff; /* white */
+}
+
+/* Hover effect */
+.services .icon-box:hover {
+    background-color: #e9ecef; /* slightly darker on hover */
+    border-color: #149ddd;     /* highlight border on hover */
 }
 
 .services .icon {
@@ -464,7 +495,7 @@ section {
 .services .title {
     margin-left: 80px;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 6px;
     font-size: 18px;
 }
 
@@ -476,10 +507,30 @@ section {
     color: #149ddd;
 }
 
+/* NEW: Subtitle styling to match title alignment */
+.services .subtitle {
+    margin-left: 80px;       /* same as title */
+    margin-bottom: 15px;     /* same vertical spacing */
+    font-size: 14px;         /* slightly smaller text */
+    color: #6c757d;          /* muted gray for subtle look */
+}
+
 .services .description {
     margin-left: 80px;
     line-height: 24px;
     font-size: 14px;
+}
+
+@media (max-width: 576px) {
+    .services .description {
+        padding-left: 0px; /* reduce from default ~40px */
+        margin-left: 40px;     /* remove extra margin */
+    }
+
+    .services .description li {
+        padding-left: 0;    /* remove extra space before bullet */
+        margin-left: 0;
+    }
 }
 
 
