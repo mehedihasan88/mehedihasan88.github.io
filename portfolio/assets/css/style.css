@@ -298,7 +298,7 @@ h6 {
         background: url("../img/hero-bg-r.jpg") center center;
         background-size: cover;
     }
-    
+
     #hero h1 {
         font-size: 28px;
         line-height: 36px;
@@ -355,11 +355,11 @@ section {
 }
 
 section:nth-of-type(odd) {
-    background-color: #ffffff; /* white for odd sections */
+    background-color: #ffffff;
 }
 
 section:nth-of-type(even) {
-    background-color: #f5f8fd; /* light blue/gray for even sections */
+    background-color: #f5f8fd;
 }
 
 /*--------------------------------------------------------------
@@ -397,6 +397,43 @@ section:nth-of-type(even) {
     margin-bottom: 0;
 }
 
+/* Keep icons aligned and colored */
+.about h4 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #173b6c;
+    vertical-align: middle;
+}
+
+.about i {
+    font-weight: 500;
+    font-size: 16px;
+    color: #173b6c;
+    vertical-align: middle;
+}
+
+.about .text-muted {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+.about ul.list-disc {
+    list-style-type: disc !important;
+    /* force bullets */
+    padding-left: 1.5rem;
+    /* space for bullets */
+    margin: 0;
+}
+
+.about ul.list-disc li {
+    margin-bottom: 6px;
+}
+
+.about ul.list-disc li::marker {
+    color: #149ddd;
+    /* optional: theme-colored bullets */
+}
 
 
 /*--------------------------------------------------------------
@@ -505,10 +542,14 @@ section:nth-of-type(even) {
 
 /* NEW: Subtitle styling to match title alignment */
 .services .subtitle {
-    margin-left: 80px;       /* same as title */
-    margin-bottom: 15px;     /* same vertical spacing */
-    font-size: 14px;         /* slightly smaller text */
-    color: #6c757d;          /* muted gray for subtle look */
+    margin-left: 80px;
+    /* same as title */
+    margin-bottom: 15px;
+    /* same vertical spacing */
+    font-size: 14px;
+    /* slightly smaller text */
+    color: #6c757d;
+    /* muted gray for subtle look */
 }
 
 .services .description {
@@ -519,12 +560,15 @@ section:nth-of-type(even) {
 
 @media (max-width: 576px) {
     .services .description {
-        padding-left: 0px; /* reduce from default ~40px */
-        margin-left: 40px;     /* remove extra margin */
+        padding-left: 0px;
+        /* reduce from default ~40px */
+        margin-left: 40px;
+        /* remove extra margin */
     }
 
     .services .description li {
-        padding-left: 0;    /* remove extra space before bullet */
+        padding-left: 0;
+        /* remove extra space before bullet */
         margin-left: 0;
     }
 }
