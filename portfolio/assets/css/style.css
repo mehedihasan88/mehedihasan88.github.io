@@ -842,3 +842,220 @@ section:nth-of-type(even) {
         padding-right: 20px 15px;
     }
 }
+
+/*--------------------------------------------------------------
+# Custom Academic Portfolio Styles
+--------------------------------------------------------------*/
+
+/* Consistent Color Palette */
+:root {
+    --accent-color: #149ddd;
+    --dark-color: #040b14;
+    --text-primary: #173b6c;
+    --text-secondary: #272829;
+    --bg-light: #f5f8fd;
+    --border-color: #e0e0e0;
+}
+
+/* Buttons - Minimal Outline Style */
+.btn-outline-primary {
+    background-color: transparent;
+    color: var(--dark-color);
+    border-color: var(--dark-color);
+    border-width: 1px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    transition: all 0.2s ease;
+}
+.btn-outline-primary:hover {
+    background-color: var(--dark-color);
+    border-color: var(--dark-color);
+    color: #fff;
+}
+.btn-outline-primary:focus {
+    background-color: transparent;
+    color: var(--dark-color);
+    border-color: var(--dark-color);
+    box-shadow: none;
+}
+
+/* Cards - Consistent Minimal Design */
+.card {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    transition: box-shadow 0.2s ease;
+    background-color: #fff;
+}
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+.card-title {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+.card-text {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Consistent Typography */
+h4.card-title {
+    color: var(--text-primary);
+}
+
+/* Section Titles - Normal scroll, separate sticky title on right */
+section {
+    overflow: visible !important;
+    position: relative;
+}
+.section-title {
+    position: relative;
+    padding: 0;
+    margin: 0 0 30px 0;
+    width: 100%;
+    text-align: center;
+}
+.section-title h2 {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+.section-title h2 i {
+    font-size: 1.4rem;
+    display: inline-block;
+    flex-shrink: 0;
+}
+/* Underline should span full width of title */
+.section-title h2::after {
+    left: 0;
+    width: 100%;
+}
+
+/* Sticky title - positioned on right when navbar is visible (desktop) */
+.section-sticky-title {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 8px 16px;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+}
+.section-sticky-title.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.section-sticky-title h2 {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+.section-sticky-title h2 i {
+    font-size: 1rem;
+    display: inline-block;
+}
+
+/* When navbar is hidden/floating (tablet/mobile), center the sticky title */
+@media (max-width: 1199px) {
+    .section-sticky-title {
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .section-sticky-title h2 {
+        text-align: center;
+    }
+}
+
+/* Links - Subtle Academic Style */
+a {
+    color: var(--accent-color);
+    transition: color 0.2s ease;
+}
+a:hover {
+    color: var(--text-primary);
+}
+
+/* Images - Consistent Styling */
+.card img {
+    border-radius: 4px;
+    max-height: 200px;
+    width: auto;
+    object-fit: cover;
+}
+
+/* Remove excessive shadows and effects */
+.shadow-sm {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Consistent spacing in cards */
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Minimal icon styling */
+.btn-outline-primary i {
+    font-size: 0.9rem;
+    margin-right: 0.25rem;
+}
+
+/* Achievements Section - Consistent with Academic Style */
+.icon-box {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: #fff;
+    transition: box-shadow 0.2s ease;
+    margin-bottom: 1.5rem;
+}
+.icon-box:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.icon-box .icon {
+    border-color: var(--accent-color);
+}
+.icon-box .icon i {
+    color: var(--accent-color);
+}
+.icon-box .title {
+    color: var(--text-primary);
+}
+.icon-box .title a {
+    color: var(--text-primary);
+}
+.icon-box .title a:hover {
+    color: var(--accent-color);
+}
+.icon-box .subtitle {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+.icon-box .description {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+.icon-box .description li {
+    margin-bottom: 0.5rem;
+}
