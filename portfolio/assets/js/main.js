@@ -197,6 +197,13 @@
   });
 
   /**
+   * Initiate image zoom lightbox 
+   */
+  const imageZoomLightbox = GLightbox({
+    selector: '.glightbox'
+  });
+
+  /**
    * Portfolio details slider
    */
   new Swiper('.portfolio-details-slider', {

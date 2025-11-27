@@ -857,25 +857,42 @@ section:nth-of-type(even) {
     --border-color: #e0e0e0;
 }
 
-/* Buttons - Minimal Outline Style */
-.btn-outline-primary {
+/* Buttons - Minimal Outline Style - Icon Only */
+.btn-outline-primary,
+.btn-sm.btn-outline-primary {
     background-color: transparent;
-    color: var(--dark-color);
-    border-color: var(--dark-color);
+    color: var(--text-primary);
+    border-color: var(--text-primary);
     border-width: 1px;
     font-weight: 400;
     letter-spacing: 0.3px;
     transition: all 0.2s ease;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    padding: 0.35rem 0.5rem !important;
+    line-height: 1;
+    min-height: auto;
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-outline-primary i {
+    font-size: 0.9rem;
+    color: var(--text-primary);
 }
 .btn-outline-primary:hover {
-    background-color: var(--dark-color);
-    border-color: var(--dark-color);
+    background-color: var(--text-primary);
+    border-color: var(--text-primary);
+    color: #fff;
+}
+.btn-outline-primary:hover i {
     color: #fff;
 }
 .btn-outline-primary:focus {
     background-color: transparent;
-    color: var(--dark-color);
-    border-color: var(--dark-color);
+    color: var(--text-primary);
+    border-color: var(--text-primary);
     box-shadow: none;
 }
 
@@ -1004,6 +1021,126 @@ a:hover {
     max-height: 200px;
     width: auto;
     object-fit: cover;
+}
+
+/* Image container with zoom button */
+.img-zoom-container {
+    position: relative;
+    display: inline-block;
+}
+.img-zoom-container img {
+    display: block;
+}
+/* Flexible card layout with max-width for images */
+.card-content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-description {
+    flex: 1;
+    min-width: 0; /* Allows flex item to shrink below content size */
+}
+
+.card-image {
+    flex-shrink: 0;
+    max-width: 300px;
+    width: auto;
+}
+
+.card-image .img-zoom-container {
+    display: inline-block;
+    width: fit-content;
+}
+
+/* Description + Image format: description on left, image on right (default) */
+.card-content-wrapper.description-first {
+    flex-direction: row;
+}
+
+.card-content-wrapper.description-first .card-image {
+    text-align: right;
+}
+
+/* Image + Description format: image on left, description on right */
+.card-content-wrapper.image-first {
+    flex-direction: row;
+}
+
+.card-content-wrapper.image-first .card-image {
+    text-align: left;
+    order: 1;
+}
+
+.card-content-wrapper.image-first .card-description {
+    order: 2;
+}
+
+/* Responsive: Stack vertically on smaller screens */
+@media (max-width: 991px) {
+    .card-content-wrapper {
+        flex-direction: column !important;
+        align-items: flex-start;
+    }
+    
+    /* Ensure text appears first, then buttons, then image */
+    .card-content-wrapper.description-first .card-description {
+        order: 1;
+    }
+    
+    .card-content-wrapper.description-first .card-image {
+        order: 3;
+    }
+    
+    .card-content-wrapper.image-first .card-description {
+        order: 1;
+    }
+    
+    .card-content-wrapper.image-first .card-image {
+        order: 3;
+    }
+    
+    .card-image {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .card-image .img-zoom-container {
+        display: block;
+        width: 100%;
+    }
+    
+    .card-image img {
+        margin: 0 auto;
+    }
+}
+.img-zoom-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.img-zoom-container:hover .img-zoom-btn {
+    opacity: 1;
+}
+.img-zoom-btn:hover {
+    background-color: var(--accent-color);
+    color: #fff;
 }
 
 /* Remove excessive shadows and effects */
