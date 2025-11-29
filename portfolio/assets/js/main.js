@@ -200,7 +200,10 @@
    * Initiate image zoom lightbox 
    */
   const imageZoomLightbox = GLightbox({
-    selector: '.glightbox'
+    selector: '.glightbox',
+    touchNavigation: false,
+    keyboardNavigation: false,
+    loop: false
   });
 
   /**
