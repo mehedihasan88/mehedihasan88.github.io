@@ -127,9 +127,7 @@ p {
     left: 0;
     bottom: 0;
     width: 300px;
-    transition: all ease-in-out 0.5s;
     z-index: 9997;
-    transition: all 0.5s;
     padding: 0 15px;
     background: #040b14;
     overflow-y: auto;
@@ -233,7 +231,6 @@ p {
     color: #a8a9b4;
     padding: 12px 15px;
     margin-bottom: 8px;
-    transition: 0.3s;
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 0.01em;
@@ -280,7 +277,6 @@ p {
     z-index: 9998;
     border: 0;
     font-size: 24px;
-    transition: all 0.4s;
     outline: none !important;
     background-color: #149ddd;
     color: #fff;
@@ -1188,30 +1184,32 @@ a:hover {
 }
 .img-zoom-btn {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 18px;
+    top: 10px;
+    right: 10px;
+    left: auto;
+    transform: none;
+    padding: 0;
+    width: 2.25rem;
+    height: 2.25rem;
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(8px);
-    border-radius: 24px;
+    border-radius: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 0;
     opacity: 1;
     transition: background-color 0.3s ease, color 0.3s ease;
     pointer-events: none;
     color: var(--dark-color);
-    font-size: 0.95rem;
+    font-size: 0;
     font-weight: 500;
-    white-space: nowrap;
+    line-height: 1;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
     z-index: 10;
-    letter-spacing: 0.01em;
 }
 .img-zoom-btn i {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 .img-zoom-container:hover .img-zoom-btn {
     background-color: var(--accent-color);
@@ -1273,6 +1271,255 @@ a:hover {
 }
 .icon-box .description li {
     margin-bottom: 0.5rem;
+}
+
+/*--------------------------------------------------------------
+# Achievements timeline
+--------------------------------------------------------------*/
+#achievements .ach-timeline {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0.5rem 0 0;
+}
+
+#achievements .ach-timeline__line {
+    position: absolute;
+    left: calc(50% - 2px);
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #dce8f8 0%, #149ddd 40%, #dce8f8 100%);
+    z-index: 0;
+}
+
+#achievements .ach-timeline__item {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+}
+
+#achievements .ach-timeline__row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 56px minmax(0, 1fr);
+    gap: 1rem 1rem;
+    align-items: start;
+    padding-bottom: 2.25rem;
+    box-sizing: border-box;
+}
+
+#achievements .ach-timeline__cell--axis {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.35rem;
+    z-index: 2;
+}
+
+#achievements .ach-timeline__node {
+    position: relative;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid #149ddd;
+    box-shadow: 0 2px 12px rgba(20, 157, 221, 0.22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#achievements .ach-timeline__node i {
+    font-size: 1.15rem;
+    color: #149ddd;
+}
+
+#achievements .ach-timeline__item--left .ach-timeline__cell--panel {
+    grid-column: 1;
+    justify-self: end;
+    width: 100%;
+    max-width: 420px;
+}
+
+#achievements .ach-timeline__item--left .ach-timeline__cell--axis {
+    grid-column: 2;
+}
+
+#achievements .ach-timeline__item--left .ach-timeline__cell--visual {
+    grid-column: 3;
+}
+
+#achievements .ach-timeline__item--right .ach-timeline__cell--visual {
+    grid-column: 1;
+}
+
+#achievements .ach-timeline__item--right .ach-timeline__cell--axis {
+    grid-column: 2;
+}
+
+#achievements .ach-timeline__item--right .ach-timeline__cell--panel {
+    grid-column: 3;
+    justify-self: start;
+    width: 100%;
+    max-width: 420px;
+}
+
+#achievements .ach-timeline__visual {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 48px;
+}
+
+#achievements .ach-timeline__item--left .ach-timeline__visual {
+    justify-content: flex-start;
+}
+
+#achievements .ach-timeline__item--right .ach-timeline__visual {
+    justify-content: flex-end;
+}
+
+#achievements .ach-timeline__visual .img-zoom-container {
+    width: 100%;
+    max-width: 280px;
+}
+
+#achievements .ach-timeline__visual img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    border: 1px solid rgba(23, 59, 108, 0.1);
+}
+
+#achievements .ach-timeline__panel {
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    background: #fff;
+    border: 1px solid rgba(23, 59, 108, 0.12);
+    border-radius: 12px;
+    padding: 1.25rem 1.4rem;
+    box-shadow: 0 2px 14px rgba(23, 59, 108, 0.06);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+#achievements .ach-timeline__panel:hover {
+    box-shadow: 0 8px 28px rgba(23, 59, 108, 0.1);
+    transform: translateY(-2px);
+}
+
+#achievements .ach-timeline__meta {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #149ddd;
+    margin-bottom: 0.35rem;
+}
+
+#achievements .ach-timeline__title {
+    font-size: 1.15rem;
+    margin: 0 0 0.35rem;
+    color: #173b6c;
+    line-height: 1.35;
+}
+
+#achievements .ach-timeline__title a {
+    color: inherit;
+}
+
+#achievements .ach-timeline__title a:hover {
+    color: #149ddd;
+}
+
+#achievements .ach-timeline__subtitle {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin: 0 0 0.85rem;
+    font-weight: 500;
+}
+
+#achievements .ach-timeline__blurb {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #495057;
+    line-height: 1.65;
+}
+
+#achievements .ach-timeline__blurb:last-child {
+    margin-bottom: 0;
+}
+
+#achievements .ach-timeline__list {
+    margin: 0;
+    padding-left: 1.15rem;
+    color: #495057;
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+#achievements .ach-timeline__list li {
+    margin-bottom: 0.45rem;
+    color: #495057;
+}
+
+#achievements .ach-timeline__list li:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+    #achievements .ach-timeline__line {
+        left: 23px;
+        margin-left: 0;
+    }
+
+    #achievements .ach-timeline__row {
+        grid-template-columns: 48px 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        padding-left: 0;
+    }
+
+    #achievements .ach-timeline__item--left .ach-timeline__cell--panel,
+    #achievements .ach-timeline__item--right .ach-timeline__cell--panel {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: stretch;
+        max-width: none;
+    }
+
+    #achievements .ach-timeline__item--left .ach-timeline__cell--axis,
+    #achievements .ach-timeline__item--right .ach-timeline__cell--axis {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        align-self: start;
+        padding-top: 0.25rem;
+    }
+
+    #achievements .ach-timeline__item--left .ach-timeline__cell--visual,
+    #achievements .ach-timeline__item--right .ach-timeline__cell--visual {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #achievements .ach-timeline__item--left .ach-timeline__visual,
+    #achievements .ach-timeline__item--right .ach-timeline__visual {
+        justify-content: flex-start;
+    }
+
+    #achievements .ach-timeline__visual .img-zoom-container {
+        max-width: 100%;
+    }
+
+    #achievements .ach-timeline__panel {
+        display: block;
+        max-width: 100%;
+    }
 }
 
 /* Additional Typography Improvements */

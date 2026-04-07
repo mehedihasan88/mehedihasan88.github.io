@@ -58,8 +58,9 @@
 
             <nav id="navbar" class="nav-menu navbar">
                 <ul>
-                    <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-task"></i> <span>Project Works</span></a></li>
-                    <li><a href="#research" class="nav-link scrollto"><i class="bx bx-file-find"></i> <span>Research Works</span></a></li>
+                    <!-- <li><a href="#professional-experience" class="nav-link scrollto"><i class="bx bx-briefcase"></i> <span>Professional experience</span></a></li> -->
+                    <li><a href="#publications" class="nav-link scrollto"><i class="bx bx-book-open"></i> <span>Publications</span></a></li>
+                    <li><a href="#research-projects" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Research Works</span></a></li>
                     <li><a href="#achievements" class="nav-link scrollto"><i class="bx bx-medal"></i> <span>Achievements</span></a></li>
                     <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
                 </ul>
@@ -80,7 +81,7 @@
 
                 <div class="row">
                     <div class="col-lg-10 pt-4 pt-lg-0 content">
-                        <h3>Mehedi Hasan | Software Engineer, Samsung RnD Bangladesh</h3>
+                        <h3>Mehedi Hasan | Software Engineer, Samsung R&amp;D Institute Bangladesh</h3>
                         <div class="row">
                             <div class="col-lg-12 text-justify">
                                 <p> I’m Mehedi Hasan, a Software Engineer at Samsung R&D Institute Bangladesh. I earned my B.Sc. in Computer Science & Engineering from Jahangirnagar University, sharpening my skills through competitive programming. At Samsung, I develop AI-driven features like liquid consumption estimation and image-to-contact conversion, and engineer backend systems to manage Nowbar items on Watch 8. I’ve built a link preview PoC for Watch 7 notifications, analyzed its security across development approaches, and explored remote view integration with custom graphics for watchfaces. I also worked on integrating Watch 8’s Nowbar with Google’s AOD interface. I’m passionate about ML, Image Processing, and intelligent systems.</p>
@@ -122,33 +123,59 @@
             </div>
         </section><!-- End About Section -->
 
-
-        <!-- ======= Projects Section ======= -->
-        <section id="projects" class="services">
+        <!-- ======= Professional Experience Section ======= -->
+        <!-- <section id="professional-experience" class="services">
             <div class="container">
 
                 <div class="section-title">
-                    <h2><i class="bx bx-task"></i> Project Works</h2>
+                    <h2><i class="bx bx-briefcase"></i> Professional experience</h2>
                 </div>
 
                 <div class="row">
-                    <!-- Project Card 1 -->
+                    <div class="col-lg-12 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h4 class="card-title mb-3">Samsung R&amp;D Institute Bangladesh</h4>
+                                <p class="card-text"><em>Software Engineer · Dhaka, Bangladesh · Jan 2024 – present</em></p>
+                                <p class="card-text text-muted small mb-3"><em>Stack &amp; focus: Java, Kotlin, Jetpack Compose, Android, Hilt, Wear OS · ML, NLP, agentic AI, explainable AI</em></p>
+                                <p class="card-text mb-2">I ship <strong>Galaxy Watch</strong> software—notifications, <strong>Nowbar</strong>, and related wearable surfaces—with integration work (e.g. AOD), Compose-based UI updates, smaller explorations like link preview, backup/restore for device changes, and routine QA and field follow-up.</p>
+                                <p class="card-text mb-2">Alongside that, I contribute to <strong>AI- and IP-oriented innovation</strong>: an interactive <strong>prior-art search agent</strong> with explanations, showcased as a PoC and adopted into Samsung Research Bangladesh’s patent-search workflow, plus <strong>wearable ML</strong> on <strong>liquid consumption estimation</strong> from device signals.</p>
+                                <p class="card-text mb-0">I also join internal <strong>innovation forums</strong>, reviewing colleagues’ ideas for novelty, obviousness, and feasibility.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section> -->
+        <!-- End Professional Experience Section -->
+
+        <!-- ======= Publications Section ======= -->
+        <section id="publications" class="services">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2><i class="bx bx-book-open"></i> Publications</h2>
+                </div>
+
+                <div class="row">
+                    <!-- Publication Card 1 -->
                     <div class="col-lg-12 mb-4">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <div class="card-content-wrapper description-first">
                                     <div class="card-description">
-                                        <h4 class="card-title mb-3">Team-Tracker</h4>
-                                        <p class="card-text">An android app that will keep track of active hours of each member of a team and generate different graphs and charts to provide a good visual overview of every team member's activity during a project. The rest API was developed using Spring Boot and MySQL Database. The android app was developed with Java and Room Database.</p>
+                                        <h4 class="card-title mb-3">Segmentation Strategies for Long-Code Authorship Detection: Balancing Context Coverage and Computational Efficiency</h4>
+                                        <p class="card-text text-muted small mb-2"><em>Mehedi Hasan, Mahbub Islam Mahim, Jugal Krishna Das (2026) · Under review</em></p>
+                                        <p class="card-text">Compared truncation, multi-view cropping, and sliding-window segmentation for long-code authorship detection under transformer context limits. Sliding-window achieved the best performance; multi-view reached near-parity with far fewer computations—highlighting context coverage as the main driver of accuracy.</p>
                                         <div class="mt-3">
-                                            <a href="https://github.com/mehedihasan88/team-tracker" class="btn btn-sm btn-outline-primary me-2" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
-                                            <a href="#" class="btn btn-sm btn-outline-primary" title="Details"><i class="bi bi-arrow-right"></i></a>
+                                            <span class="badge bg-secondary me-2">Under review</span>
                                         </div>
                                     </div>
                                     <div class="card-image">
-                                        <a href="assets/img/portfolio/portfolio-1.jpg" class="img-zoom-container glightbox" data-gallery="projects">
-                                            <img src="assets/img/portfolio/portfolio-1.jpg" alt="Team-Tracker" class="img-fluid rounded" style="max-height: 200px; width: auto;">
-                                            <span class="img-zoom-btn"><i class="bi bi-zoom-in"></i> See Details</span>
+                                        <a href="assets/images/long_context_paper.png" class="img-zoom-container glightbox" data-gallery="publications">
+                                            <img src="assets/images/long_context_paper.png" alt="Long-code authorship detection publication" class="img-fluid rounded" style="max-height: 200px; width: auto;">
+                                            <span class="img-zoom-btn" aria-label="View larger image"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
                                         </a>
                                     </div>
                                 </div>
@@ -156,47 +183,59 @@
                         </div>
                     </div>
 
-                    <!-- Project Card 2 -->
+                    <!-- Publication Card 2 -->
                     <div class="col-lg-12 mb-4">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <div class="card-content-wrapper image-first">
                                     <div class="card-image">
-                                        <a href="assets/img/project_write_in.png" class="img-zoom-container glightbox" data-gallery="projects">
-                                            <img src="assets/img/project_write_in.png" alt="Write-in" class="img-fluid rounded" style="max-height: 200px; width: auto;">
-                                            <span class="img-zoom-btn"><i class="bi bi-zoom-in"></i> See Details</span>
+                                        <a href="assets/images/hatespecch_paper.png" class="img-zoom-container glightbox" data-gallery="publications">
+                                            <img src="assets/images/hatespecch_paper.png" alt="Bangla hate speech detection publication" class="img-fluid rounded" style="max-height: 200px; width: auto;">
+                                            <span class="img-zoom-btn" aria-label="View larger image"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
                                         </a>
                                     </div>
                                     <div class="card-description">
-                                        <h4 class="card-title mb-3">Write-in</h4>
-                                        <p class="card-text">Web-based blogging platform with user site and admin panel. Full-stack development from scratch using Node.js, Express.js, Bootstrap, MongoDB, and EJS.</p>
+                                        <h4 class="card-title mb-3">Divide and Conquer: A Two-Stage Label-Wise Cascaded Framework for Bangla Hate Speech Detection</h4>
+                                        <p class="card-text text-muted small mb-2"><em>Mehedi Hasan, Mahbub Islam Mahim (2025)</em> · <strong>Best Paper</strong>, BLP Workshop 2025 · Presented at AACL-IJCNLP 2025</p>
+                                        <p class="card-text">Cascaded pipeline combining binary and multiclass models with k-fold cross-validation and intra-label ensembling; achieved micro-F1 <strong>0.7392</strong>—top result in the BLP Workshop 2025 shared task.</p>
                                         <div class="mt-3">
-                                            <a href="https://github.com/mehedihasan88/Write-In" class="btn btn-sm btn-outline-primary me-2" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
-                                            <a href="#" class="btn btn-sm btn-outline-primary" title="Details"><i class="bi bi-arrow-right"></i></a>
+                                            <a href="https://aclanthology.org/2025.banglalp-1.39.pdf" class="btn btn-sm btn-outline-primary me-2" target="_blank" rel="noopener" title="Paper (PDF)"><i class="bi bi-file-pdf"></i></a>
+                                            <a href="https://github.com/mehedihasan88/Hate-Speech-Detection-Bangla" class="btn btn-sm btn-outline-primary me-2" target="_blank" rel="noopener" title="Code"><i class="bi bi-github"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Project Card 3 -->
+            </div>
+        </section>
+        <!-- End Publications Section -->
+
+        <!-- ======= Research projects Section ======= -->
+        <section id="research-projects" class="services">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2><i class="bx bx-book-content"></i> Research Works</h2>
+                </div>
+
+                <div class="row">
+                    <!-- Samsung R&D: research & innovation summary -->
                     <div class="col-lg-12 mb-4">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <div class="card-content-wrapper description-first">
                                     <div class="card-description">
-                                        <h4 class="card-title mb-3">Student Helping Tool</h4>
-                                        <p class="card-text">Console-based tool for taking class notes and using calculators. Applied Object-Oriented Programming concepts and developed in C++.</p>
-                                        <div class="mt-3">
-                                            <a href="https://github.com/mehedihasan88/student-helping-tool" class="btn btn-sm btn-outline-primary me-2" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
-                                            <a href="#" class="btn btn-sm btn-outline-primary" title="Details"><i class="bi bi-arrow-right"></i></a>
-                                        </div>
+                                        <h4 class="card-title mb-3">Research experiences at Samsung R&amp;D Institute Bangladesh</h4>
+                                        <p class="card-text text-muted small mb-2"><em>ML, NLP, Agentic AI, XAI</em></p>
+                                        <p class="card-text mb-2">I built an interactive patent search agent that improves query refinement and detects multi-patent relationships with clear explanations, now being integrated into Samsung’s internal workflow to accelerate innovation. I also proposed and developed a machine learning approach for estimating liquid consumption using wearable devices</p>
                                     </div>
                                     <div class="card-image">
-                                        <a href="assets/img/portfolio/portfolio-3.jpg" class="img-zoom-container glightbox" data-gallery="projects">
-                                            <img src="assets/img/portfolio/portfolio-3.jpg" alt="Student Helping Tool" class="img-fluid rounded" style="max-height: 200px; width: auto;">
-                                            <span class="img-zoom-btn"><i class="bi bi-zoom-in"></i> See Details</span>
+                                        <a href="assets/images/srbd.png" class="img-zoom-container glightbox" data-gallery="projects">
+                                            <img src="assets/images/srbd.png" alt="Samsung R&amp;D Institute Bangladesh (SRBD)" class="img-fluid rounded" style="max-height: 200px; width: auto;">
+                                            <span class="img-zoom-btn" aria-label="View larger image"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
                                         </a>
                                     </div>
                                 </div>
@@ -204,47 +243,48 @@
                         </div>
                     </div>
 
-                    <!-- Project Card 4 -->
+                    <!-- Human–Machine Hybrid -->
                     <div class="col-lg-12 mb-4">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <div class="card-content-wrapper image-first">
                                     <div class="card-image">
-                                        <a href="assets/img/project_image_forgery_detection.png" class="img-zoom-container glightbox" data-gallery="projects">
-                                            <img src="assets/img/project_image_forgery_detection.png" alt="Image Forgery Detection System" class="img-fluid rounded" style="max-height: 200px; width: auto;">
-                                            <span class="img-zoom-btn"><i class="bi bi-zoom-in"></i> See Details</span>
+                                        <a href="assets/images/code_classification_project.png" class="img-zoom-container glightbox" data-gallery="projects">
+                                            <img src="assets/images/code_classification_project.png" alt="Human-Machine Hybrid Adversarial Code Classification" class="img-fluid rounded" style="max-height: 200px; width: auto;">
+                                            <span class="img-zoom-btn" aria-label="View larger image"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
                                         </a>
                                     </div>
+                                    <div class="card-description">
+                                        <h4 class="card-title mb-3">Human–Machine Hybrid Adversarial Code Classification</h4>
+                                        <p class="card-text"><em>PyTorch, scikit-learn, NumPy, Pandas</em></p>
+                                        <p class="card-text">Multiple strategies including AST-based feature engineering, class-mapping (4-to-3), overlapping windows for long code, multi-view learning, and specialized hard-case training loops. Achieved macro F1 of <strong>82%</strong> on seen languages and <strong>62%</strong> on mixed (seen and unseen) setups.</p>
+                                        <div class="mt-3">
+                                            <a href="https://github.com/mehedihasan88/Human-Machine-Hybrid-Adversarial-Code-Classification" class="btn btn-sm btn-outline-primary me-2" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card: Image Forgery Detection -->
+                    <div class="col-lg-12 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <div class="card-content-wrapper description-first">
                                     <div class="card-description">
                                         <h4 class="card-title mb-3">Image Forgery Detection System</h4>
-                                        <p class="card-text">Machine learning-based detection of copy-move and splicing image forgery. Used Sklearn, Matplotlib, Joblib, Seaborn, and Tkinter. Achieved 98% accuracy on two benchmark datasets.</p>
+                                        <p class="card-text"><em>OpenCV, NumPy, SciPy, scikit-learn, Matplotlib, Seaborn</em></p>
+                                        <p class="card-text">Copy-move and splicing manipulation detection using LBP, DCT, and SVM. Best setup reached up to <strong>97%</strong> accuracy on CASIA datasets and <strong>89%</strong> on Columbia.</p>
                                         <div class="mt-3">
                                             <a href="https://github.com/mehedihasan88/Image-Forgery-Detection-System" class="btn btn-sm btn-outline-primary me-2" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
                                             <a href="#" class="btn btn-sm btn-outline-primary" title="Details"><i class="bi bi-arrow-right"></i></a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 5 -->
-                    <div class="col-lg-12 mb-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <div class="card-content-wrapper description-first">
-                                    <div class="card-description">
-                                        <h4 class="card-title mb-3">Tasbih</h4>
-                                        <p class="card-text">Android app for counting and tracking dhikr. Allows setting targets and tracking history with a simple and user-friendly interface.</p>
-                                        <div class="mt-3">
-                                            <a href="https://github.com/mehedihasan88/tasbih" class="btn btn-sm btn-outline-primary me-2" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
-                                            <a href="#" class="btn btn-sm btn-outline-primary" title="Details"><i class="bi bi-arrow-right"></i></a>
-                                        </div>
-                                    </div>
                                     <div class="card-image">
-                                        <a href="assets/img/portfolio/portfolio-5.jpg" class="img-zoom-container glightbox" data-gallery="projects">
-                                            <img src="assets/img/portfolio/portfolio-5.jpg" alt="Tasbih" class="img-fluid rounded" style="max-height: 200px; width: auto;">
-                                            <span class="img-zoom-btn"><i class="bi bi-zoom-in"></i> See Details</span>
+                                        <a href="assets/img/project_image_forgery_detection.png" class="img-zoom-container glightbox" data-gallery="projects">
+                                            <img src="assets/img/project_image_forgery_detection.png" alt="Image Forgery Detection System" class="img-fluid rounded" style="max-height: 200px; width: auto;">
+                                            <span class="img-zoom-btn" aria-label="View larger image"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
                                         </a>
                                     </div>
                                 </div>
@@ -252,109 +292,44 @@
                         </div>
                     </div>
 
-                    <!-- Project Card 6 -->
+                    <!-- Bangla Hate Speech Detection -->
                     <div class="col-lg-12 mb-4">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <div class="card-content-wrapper image-first">
                                     <div class="card-image">
-                                        <a href="assets/img/portfolio/portfolio-6.jpg" class="img-zoom-container glightbox" data-gallery="projects">
-                                            <img src="assets/img/portfolio/portfolio-6.jpg" alt="Fire Alarm" class="img-fluid rounded" style="max-height: 200px; width: auto;">
-                                            <span class="img-zoom-btn"><i class="bi bi-zoom-in"></i> See Details</span>
+                                        <a href="assets/images/hatespeech_project.png" class="img-zoom-container glightbox" data-gallery="projects">
+                                            <img src="assets/images/hatespeech_project.png" alt="Bangla Hate Speech Detection" class="img-fluid rounded" style="max-height: 200px; width: auto;">
+                                            <span class="img-zoom-btn" aria-label="View larger image"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
                                         </a>
                                     </div>
                                     <div class="card-description">
-                                        <h4 class="card-title mb-3">Fire Alarm</h4>
-                                        <p class="card-text">Arduino-based fire detection system that triggers alarms and sends phone call alerts. Designed for quick emergency response.</p>
+                                        <h4 class="card-title mb-3">Bangla Hate Speech Detection</h4>
+                                        <p class="card-text"><em>Python, PyTorch, Hugging Face Transformers · BLP Workshop 2025 shared task</em></p>
+                                        <p class="card-text">Code for a <strong>two-stage cascaded</strong> framework with <strong>k-fold ensembling</strong> covering subtasks 1A (hate type), 1B (target), and 1C (joint type, target, and severity). Reported micro-F1 up to <strong>0.7392</strong> on the joint track, with competitive rankings across tasks—see the <a href="#publications">Publications</a> entry for the full paper.</p>
                                         <div class="mt-3">
-                                            <a href="#" class="btn btn-sm btn-outline-primary me-2" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
-                                            <a href="#" class="btn btn-sm btn-outline-primary" title="Details"><i class="bi bi-arrow-right"></i></a>
+                                            <a href="https://github.com/mehedihasan88/Hate-Speech-Detection-Bangla" class="btn btn-sm btn-outline-primary me-2" target="_blank" rel="noopener" title="GitHub repository"><i class="bi bi-github"></i></a>
+                                            <a href="https://aclanthology.org/2025.banglalp-1.39.pdf" class="btn btn-sm btn-outline-primary me-2" target="_blank" rel="noopener" title="Paper (PDF)"><i class="bi bi-file-pdf"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-            </div>
-        </section>
-        <!-- End Projects Section -->
-
-        <!-- ======= Research Works Section ======= -->
-        <section id="research" class="services">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2><i class="bx bx-file-find"></i> Research Works</h2>
-                </div>
-
-                <div class="row">
-                    <!-- Research Card 1 -->
+                    <!-- Long-code authorship -->
                     <div class="col-lg-12 mb-4">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <div class="card-content-wrapper description-first">
                                     <div class="card-description">
-                                        <h4 class="card-title mb-3">Research Project 1</h4>
-                                        <p class="card-text">Description of your research work. Include key findings, methodologies, and contributions. This is a placeholder that you can update with your actual research details.</p>
-                                        <div class="mt-3">
-                                            <a href="#" class="btn btn-sm btn-outline-primary me-2" target="_blank" title="Paper"><i class="bi bi-file-pdf"></i></a>
-                                            <a href="#" class="btn btn-sm btn-outline-primary" title="Details"><i class="bi bi-arrow-right"></i></a>
-                                        </div>
+                                        <h4 class="card-title mb-3">Long-code authorship under context limits</h4>
+                                        <p class="card-text">Empirical study of segmentation strategies (truncation, multi-view cropping, sliding windows) for authorship detection when code exceeds transformer context windows—see <a href="#publications">Publications</a> for the manuscript (under review).</p>
                                     </div>
                                     <div class="card-image">
-                                        <a href="assets/img/portfolio/portfolio-7.jpg" class="img-zoom-container glightbox" data-gallery="research">
-                                            <img src="assets/img/portfolio/portfolio-7.jpg" alt="Research Project 1" class="img-fluid rounded" style="max-height: 200px; width: auto;">
-                                            <span class="img-zoom-btn"><i class="bi bi-zoom-in"></i> See Details</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Research Card 2 -->
-                    <div class="col-lg-12 mb-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <div class="card-content-wrapper image-first">
-                                    <div class="card-image">
-                                        <a href="assets/img/portfolio/portfolio-8.jpg" class="img-zoom-container glightbox" data-gallery="research">
-                                            <img src="assets/img/portfolio/portfolio-8.jpg" alt="Research Project 2" class="img-fluid rounded" style="max-height: 200px; width: auto;">
-                                            <span class="img-zoom-btn"><i class="bi bi-zoom-in"></i> See Details</span>
-                                        </a>
-                                    </div>
-                                    <div class="card-description">
-                                        <h4 class="card-title mb-3">Research Project 2</h4>
-                                        <p class="card-text">Description of your research work. Include key findings, methodologies, and contributions. This is a placeholder that you can update with your actual research details.</p>
-                                        <div class="mt-3">
-                                            <a href="#" class="btn btn-sm btn-outline-primary me-2" target="_blank" title="Paper"><i class="bi bi-file-pdf"></i></a>
-                                            <a href="#" class="btn btn-sm btn-outline-primary" title="Details"><i class="bi bi-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Research Card 3 -->
-                    <div class="col-lg-12 mb-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <div class="card-content-wrapper description-first">
-                                    <div class="card-description">
-                                        <h4 class="card-title mb-3">Research Project 3</h4>
-                                        <p class="card-text">Description of your research work. Include key findings, methodologies, and contributions. This is a placeholder that you can update with your actual research details.</p>
-                                        <div class="mt-3">
-                                            <a href="#" class="btn btn-sm btn-outline-primary me-2" target="_blank" title="Paper"><i class="bi bi-file-pdf"></i></a>
-                                            <a href="#" class="btn btn-sm btn-outline-primary" title="Details"><i class="bi bi-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="card-image">
-                                        <a href="assets/img/portfolio/portfolio-9.jpg" class="img-zoom-container glightbox" data-gallery="research">
-                                            <img src="assets/img/portfolio/portfolio-9.jpg" alt="Research Project 3" class="img-fluid rounded" style="max-height: 200px; width: auto;">
-                                            <span class="img-zoom-btn"><i class="bi bi-zoom-in"></i> See Details</span>
+                                        <a href="assets/images/long_code_project.png" class="img-zoom-container glightbox" data-gallery="projects">
+                                            <img src="assets/images/long_code_project.png" alt="Long-code authorship research" class="img-fluid rounded" style="max-height: 200px; width: auto;">
+                                            <span class="img-zoom-btn" aria-label="View larger image"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
                                         </a>
                                     </div>
                                 </div>
@@ -365,9 +340,9 @@
 
             </div>
         </section>
-        <!-- End Research Works Section -->
+        <!-- End Research projects Section -->
 
-        <!-- ======= Achievements Section ======= -->
+        <!-- ======= Achievements Section (timeline) ======= -->
         <section id="achievements" class="services">
             <div class="container">
 
@@ -375,77 +350,249 @@
                     <h2><i class="bx bx-medal"></i> Achievements</h2>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-12 icon-box">
-                        <div class="icon"><i class="bi bi-briefcase"></i></div>
-                        <h4 class="title"><a href="https://github.com/mehedihasan88/team-tracker">Team-Tracker</a></h4>
-                        <p class="subtitle">Arduino-based fire detection & alert system</p>
-                        <ul class="description">
-                            <li>Android app to track and visualize team member productivity</li>
-                            <li>Developed as a group project</li>
-                            <li>Technologies: Spring Boot, MySQL, Room Database, Java, MPAndroidChart</li>
-                        </ul>
-                    </div>
+                <div class="ach-timeline">
+                    <div class="ach-timeline__line" aria-hidden="true"></div>
 
-                    <div class="col-lg-12 icon-box">
-                        <div class="icon"><i class="bi bi-card-checklist"></i></div>
-                        <h4 class="title"><a href="https://github.com/mehedihasan88/Write-In">Write-in</a></h4>
-                        <p class="subtitle">Arduino-based fire detection & alert system</p>
-                        <ul class="description">
-                            <li>Web-based blogging platform with user site and admin panel</li>
-                            <li>Full-stack development from scratch</li>
-                            <li>Technologies: Node.js, Express.js, Bootstrap, MongoDB, EJS</li>
-                        </ul>
-                    </div>
+                    <article class="ach-timeline__item ach-timeline__item--right">
+                        <div class="ach-timeline__row">
+                            <div class="ach-timeline__cell ach-timeline__cell--visual">
+                                <div class="ach-timeline__visual">
+                                    <a href="assets/images/best_paper_hate_speech_award.png" class="img-zoom-container glightbox" data-gallery="achievements">
+                                        <img src="assets/images/best_paper_hate_speech_award.png" alt="Best Shared Task Paper Award" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--axis">
+                                <div class="ach-timeline__node"><i class="bi bi-journal-richtext" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--panel">
+                                <div class="ach-timeline__panel">
+                                    <span class="ach-timeline__meta">Dec 2025</span>
+                                    <h3 class="ach-timeline__title"><a href="https://drive.google.com/file/d/1TZ1BC7f9vZd4Um3X71lnLIiVnfKcnWZu/view?usp=sharing" target="_blank" rel="noopener">Best Shared Task Paper Award</a></h3>
+                                    <p class="ach-timeline__subtitle">Second Workshop on Bangla Language Processing</p>
+                                    <p class="ach-timeline__blurb">Best shared-task paper among submissions — tied to the <a href="#publications">BLP / Bangla hate speech</a> publication line.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
 
-                    <div class="col-lg-12 icon-box">
-                        <div class="icon"><i class="bi bi-bar-chart"></i></div>
-                        <h4 class="title"><a href="https://github.com/mehedihasan88/student-helping-tool">Student Helping Tool</a></h4>
-                        <p class="subtitle">Arduino-based fire detection & alert system</p>
-                        <ul class="description">
-                            <li>Console-based tool for taking class notes and using calculators</li>
-                            <li>Applied Object-Oriented Programming concepts</li>
-                            <li>Developed in C++</li>
-                        </ul>
-                    </div>
+                    <article class="ach-timeline__item ach-timeline__item--left">
+                        <div class="ach-timeline__row">
+                            <div class="ach-timeline__cell ach-timeline__cell--panel">
+                                <div class="ach-timeline__panel">
+                                    <span class="ach-timeline__meta">Nov 2024</span>
+                                    <h3 class="ach-timeline__title"><a href="https://drive.google.com/file/d/1hPiSiVjWTSywI1mTbGowvkvA_WPg_DUx/view?usp=sharing" target="_blank" rel="noopener">Software Coding (SWC) certification recognition</a></h3>
+                                    <p class="ach-timeline__subtitle">Samsung R&amp;D Institute Bangladesh</p>
+                                    <p class="ach-timeline__blurb">Professional-level SWC certification — recognized for <strong>coding excellence</strong>.</p>
+                                </div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--axis">
+                                <div class="ach-timeline__node"><i class="bi bi-patch-check" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--visual">
+                                <div class="ach-timeline__visual">
+                                    <a href="assets/images/swc_award.png" class="img-zoom-container glightbox" data-gallery="achievements">
+                                        <img src="assets/images/swc_award.png" alt="Samsung SWC certification" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
 
-                    <div class="col-lg-12 icon-box">
-                        <div class="icon"><i class="bi bi-binoculars"></i></div>
-                        <h4 class="title"><a href="https://github.com/mehedihasan88/Image-Forgery-Detection-System">Image Forgery Detection System</a></h4>
-                        <p class="subtitle">Arduino-based fire detection & alert system</p>
-                        <ul class="description">
-                            <li>Machine learning-based detection of copy-move and splicing image forgery</li>
-                            <li>Used Sklearn, Matplotlib, Joblib, Seaborn, Tkinter</li>
-                            <li>Achieved 98% accuracy on two benchmark datasets</li>
-                        </ul>
-                    </div>
+                    <article class="ach-timeline__item ach-timeline__item--right">
+                        <div class="ach-timeline__row">
+                            <div class="ach-timeline__cell ach-timeline__cell--visual">
+                                <div class="ach-timeline__visual">
+                                    <a href="assets/images/exellence_srbd_24.png" class="img-zoom-container glightbox" data-gallery="achievements">
+                                        <img src="assets/images/exellence_srbd_24.png" alt="Samsung Excellence Award" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--axis">
+                                <div class="ach-timeline__node"><i class="bi bi-building" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--panel">
+                                <div class="ach-timeline__panel">
+                                    <span class="ach-timeline__meta">Jan – Mar 2024</span>
+                                    <h3 class="ach-timeline__title"><a href="https://drive.google.com/file/d/1RSXIlc7u4quhdo_rM9TrNKrWYXROesZw/view?usp=sharing" target="_blank" rel="noopener">Excellence Award</a></h3>
+                                    <p class="ach-timeline__subtitle">Samsung R&amp;D Institute Bangladesh</p>
+                                    <p class="ach-timeline__blurb">Recognition for <strong>development contributions</strong> on the Galaxy Wearables engineering track.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
 
-                    <div class="col-lg-12 icon-box">
-                        <div class="icon"><i class="bi bi-brightness-high"></i></div>
-                        <h4 class="title"><a href="https://github.com/mehedihasan88/tasbih">Tasbih</a></h4>
-                        <p class="subtitle">Arduino-based fire detection & alert system</p>
-                        <ul class="description">
-                            <li>Android app for counting and tracking dhikr</li>
-                            <li>Allows setting targets and tracking history</li>
-                            <li>Simple and user-friendly interface</li>
-                        </ul>
-                    </div>
+                    <article class="ach-timeline__item ach-timeline__item--left">
+                        <div class="ach-timeline__row">
+                            <div class="ach-timeline__cell ach-timeline__cell--panel">
+                                <div class="ach-timeline__panel">
+                                    <span class="ach-timeline__meta">2022</span>
+                                    <h3 class="ach-timeline__title"><a href="https://www.codesamuraibd.net" target="_blank" rel="noopener">Code Samurai Hackathon — Finalist</a></h3>
+                                    <p class="ach-timeline__subtitle">University of Dhaka · Team <code>JU_NONAME</code></p>
+                                    <p class="ach-timeline__blurb"><strong>Finalist</strong> among 400+ teams: algorithmic and SQL preliminaries; web-based system in the final.</p>
+                                </div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--axis">
+                                <div class="ach-timeline__node"><i class="bi bi-lightning-charge" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--visual">
+                                <div class="ach-timeline__visual">
+                                    <a href="assets/images/code_samurai_hackathons.png" class="img-zoom-container glightbox" data-gallery="achievements">
+                                        <img src="assets/images/code_samurai_hackathons.png" alt="Code Samurai Hackathon" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
 
-                    <div class="col-lg-12 icon-box">
-                        <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-                        <h4 class="title"><a href="">Fire Alarm</a></h4>
-                        <p class="subtitle">Arduino-based fire detection & alert system</p>
-                        <ul class="description">
-                            <li>Arduino-based fire detection system</li>
-                            <li>Triggers alarms and sends phone call alerts</li>
-                            <li>Designed for quick emergency response</li>
-                        </ul>
-                    </div>
+                    <article class="ach-timeline__item ach-timeline__item--right">
+                        <div class="ach-timeline__row">
+                            <div class="ach-timeline__cell ach-timeline__cell--visual">
+                                <div class="ach-timeline__visual">
+                                    <a href="assets/images/300_uva.png" class="img-zoom-container glightbox" data-gallery="achievements">
+                                        <img src="assets/images/300_uva.png" alt="Solved 300 problems on UVa" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--axis">
+                                <div class="ach-timeline__node"><i class="bi bi-code-slash" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--panel">
+                                <div class="ach-timeline__panel">
+                                    <span class="ach-timeline__meta">2020-11-16</span>
+                                    <h3 class="ach-timeline__title">Solved 300 problems on UVa</h3>
+                                    <p class="ach-timeline__subtitle"><a href="https://onlinejudge.org/" target="_blank" rel="noopener">UVa Online Judge</a></p>
+                                    <p class="ach-timeline__blurb">Reached the <strong>300 solved problems</strong> milestone.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="ach-timeline__item ach-timeline__item--left">
+                        <div class="ach-timeline__row">
+                            <div class="ach-timeline__cell ach-timeline__cell--panel">
+                                <div class="ach-timeline__panel">
+                                    <span class="ach-timeline__meta">Sep 6, 2020</span>
+                                    <h3 class="ach-timeline__title">Became Expert on Codeforces</h3>
+                                    <p class="ach-timeline__subtitle"><a href="https://codeforces.com/contest/1405" target="_blank" rel="noopener">Codeforces Round 668 (Div. 2)</a> — <a href="https://codeforces.com/profile/MhD88" target="_blank" rel="noopener">MhD88</a></p>
+                                    <ul class="ach-timeline__list">
+                                        <li>Placed <strong>3rd</strong> in the contest standings.</li>
+                                        <li>Rating <strong>+12</strong> → <strong>1611</strong> (crossed into <strong>Expert</strong>, 1600+).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--axis">
+                                <div class="ach-timeline__node"><i class="bi bi-trophy" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--visual">
+                                <div class="ach-timeline__visual">
+                                    <a href="assets/images/codeforce_expert.png" class="img-zoom-container glightbox" data-gallery="achievements">
+                                        <img src="assets/images/codeforce_expert.png" alt="Became Expert on Codeforces — Round 668 (Div. 2)" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="ach-timeline__item ach-timeline__item--right">
+                        <div class="ach-timeline__row">
+                            <div class="ach-timeline__cell ach-timeline__cell--visual">
+                                <div class="ach-timeline__visual">
+                                    <a href="assets/images/codechef_4_star_award.png" class="img-zoom-container glightbox" data-gallery="achievements">
+                                        <img src="assets/images/codechef_4_star_award.png" alt="Became 4★ on CodeChef — August Lunchtime 2020 Division 2" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--axis">
+                                <div class="ach-timeline__node"><i class="bi bi-trophy" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--panel">
+                                <div class="ach-timeline__panel">
+                                    <span class="ach-timeline__meta">Aug 29, 2020 · 22:30:02</span>
+                                    <h3 class="ach-timeline__title">Became 4★ on CodeChef</h3>
+                                    <p class="ach-timeline__subtitle"><a href="https://www.codechef.com/rankings/LTIME87B" target="_blank" rel="noopener">August Lunchtime 2020 Division 2</a> — <a href="https://www.codechef.com/users/mhd88" target="_blank" rel="noopener">mhd88</a></p>
+                                    <ul class="ach-timeline__list">
+                                        <li>Rating <strong>1810</strong> (<strong>+96</strong>).</li>
+                                        <li>Global rank <strong>437</strong>.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="ach-timeline__item ach-timeline__item--left">
+                        <div class="ach-timeline__row">
+                            <div class="ach-timeline__cell ach-timeline__cell--panel">
+                                <div class="ach-timeline__panel">
+                                    <span class="ach-timeline__meta">2018 – 2023</span>
+                                    <h3 class="ach-timeline__title"><a href="https://juniv.edu/discussion/17342?fbclid=IwY2xjawNiIWNleHRuA2FlbQIxMABicmlkETF2czdnZTF3a2F1VWl2NGZ0AR6dvoyfj46qx-I9sv0evU2T1Pd_UI6-NoSAAciD6NZvUMo7rrxXHB9U5MDwUw_aem_wtrqgCxoLhfpys6O6EXRWA" target="_blank" rel="noopener">Dean’s Merit scholarships</a></h3>
+                                    <p class="ach-timeline__subtitle">Jahangirnagar University · B.Sc. in Computer Science &amp; Engineering</p>
+                                    <p class="ach-timeline__blurb">Dean’s Merit Scholarship in <strong>all four years</strong> of the undergraduate program for academic excellence.</p>
+                                </div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--axis">
+                                <div class="ach-timeline__node"><i class="bi bi-mortarboard" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--visual">
+                                <div class="ach-timeline__visual">
+                                    <a href="assets/images/deans_award.png" class="img-zoom-container glightbox" data-gallery="achievements">
+                                        <img src="assets/images/deans_award.png" alt="Jahangirnagar University · Dean’s Merit scholarships" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="ach-timeline__item ach-timeline__item--right">
+                        <div class="ach-timeline__row">
+                            <div class="ach-timeline__cell ach-timeline__cell--visual">
+                                <div class="ach-timeline__visual">
+                                    <a href="assets/images/national_board_award.png" class="img-zoom-container glightbox" data-gallery="achievements">
+                                        <img src="assets/images/national_board_award.png" alt="Merit scholarship 2013" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--axis">
+                                <div class="ach-timeline__node"><i class="bi bi-mortarboard" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--panel">
+                                <div class="ach-timeline__panel">
+                                    <span class="ach-timeline__meta">2013</span>
+                                    <h3 class="ach-timeline__title">Merit scholarship</h3>
+                                    <p class="ach-timeline__subtitle">Junior School Certification Examination · DSHE, Ministry of Education</p>
+                                    <p class="ach-timeline__blurb">Merit-based award at the junior secondary level.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="ach-timeline__item ach-timeline__item--left">
+                        <div class="ach-timeline__row">
+                            <div class="ach-timeline__cell ach-timeline__cell--panel">
+                                <div class="ach-timeline__panel">
+                                    <span class="ach-timeline__meta">2011</span>
+                                    <h3 class="ach-timeline__title">Talent Pool Scholarship</h3>
+                                    <p class="ach-timeline__subtitle">Primary School Certification Exam · Ministry of Primary and Mass Education</p>
+                                    <p class="ach-timeline__blurb">National recognition for primary-level academic performance.</p>
+                                </div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--axis">
+                                <div class="ach-timeline__node"><i class="bi bi-mortarboard" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="ach-timeline__cell ach-timeline__cell--visual">
+                                <div class="ach-timeline__visual">
+                                    <a href="assets/img/portfolio/portfolio-6.jpg" class="img-zoom-container glightbox" data-gallery="achievements">
+                                        <img src="assets/img/portfolio/portfolio-6.jpg" alt="Talent Pool Scholarship" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
 
             </div>
         </section>
-        <!-- End Projects Section -->
+        <!-- End Achievements Section -->
 
 
 
@@ -461,9 +608,8 @@
                     <h2><i class="bx bx-envelope"></i> Contact</h2>
                 </div>
 
-                <div class="row">
-
-                    <div class="col-lg-5 d-flex align-items-stretch">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
                         <div class="info">
                             <div class="address">
                                 <i class="bi bi-geo-alt"></i>
@@ -474,65 +620,22 @@
                             <div class="email">
                                 <i class="bi bi-envelope"></i>
                                 <h4>Email:</h4>
-                                <p>mmehedihasan29088@gmail.com</p>
+                                <p><a href="mailto:mmehedihasan29088@gmail.com">mmehedihasan29088@gmail.com</a></p>
                             </div>
 
                             <div class="phone">
                                 <i class="bi bi-phone"></i>
                                 <h4>Call:</h4>
-                                <p>01781190926</p>
+                                <p><a href="tel:+8801781190926">01781190926</a></p>
                             </div>
-
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d486.9379890772115!2d90.34693066355861!3d23.803892634426507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0e96fce29dd%3A0x6ccd9e51aba9e64d!2sMirpur-1%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1691836030727!5m2!1sen!2sbd" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
                         </div>
-
                     </div>
-
-                    <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                        <form id="my-form" action="https://formspree.io/f/mleypzdg" method="post" role="form" class="php-email-form">
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <label for="name">Your Name</label>
-                                    <input type="text" name="name" class="form-control" id="name" required>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="name">Your Email</label>
-                                    <input type="email" class="form-control" name="email" id="email" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="name">Subject</label>
-                                <input type="text" class="form-control" name="subject" id="subject" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="name">Message</label>
-                                <textarea class="form-control" name="message" rows="10" required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <p id="my-form-status"></p>
-                            </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
-                        </form>
-                    </div>
-
                 </div>
 
             </div>
         </section><!-- End Contact Section -->
 
     </main><!-- End #main -->
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-        <div class="container">
-            <div class="copyright">
-                &copy; Copyright <strong><span>Mehedi Hasan</span></strong>
-            </div>
-            <div class="credits">
-                Designed by <a href="https://bootstrapmade.com/">&hearts; of Mehedi Hasan</a>
-            </div>
-        </div>
-    </footer><!-- End  Footer -->
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -551,37 +654,6 @@
 
 </body>
 <script>
-    var form = document.getElementById("my-form");
-
-    async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("my-form-status");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
-            if (response.ok) {
-                status.innerHTML = "<p style=\"color:green;\"><b>Thank You For Reaching Out.</b></p>";
-                form.reset()
-            } else {
-                response.json().then(data => {
-                    if (Object.hasOwn(data, 'errors')) {
-                        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                    } else {
-                        status.innerHTML = "<p style=\"color:red;\"><b>Something went wrong! Try Again!</b></p>"
-                    }
-                })
-            }
-        }).catch(error => {
-            status.innerHTML = "<p style=\"color:red;\"><b>Something went wrong! Try Again!</b></p>"
-        });
-    }
-    form.addEventListener("submit", handleSubmit)
-
     // Create and manage sticky titles on right side
     function handleStickyTitles() {
         const sections = document.querySelectorAll('section[id]');
