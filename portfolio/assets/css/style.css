@@ -158,25 +158,63 @@ p {
     text-decoration: none;
 }
 
+#header .profile .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
 #header .profile .social-links a {
     font-size: 18px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background: #212431;
     color: #fff;
     line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
+    padding: 0;
+    margin: 0;
     border-radius: 50%;
     text-align: center;
     width: 36px;
     height: 36px;
     transition: 0.3s;
+    box-sizing: border-box;
+    vertical-align: middle;
 }
 
 #header .profile .social-links a:hover {
     background: #149ddd;
     color: #fff;
     text-decoration: none;
+}
+
+/* Same 36px circle as GitHub / LinkedIn; stack label + icon inside */
+#header .profile .social-links a.cv-download {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    padding: 5px 0 4px;
+    border-radius: 50%;
+    flex-direction: column;
+    gap: 0;
+    font-size: inherit;
+}
+
+#header .profile .social-links a.cv-download .cv-download-text {
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    line-height: 1;
+}
+
+#header .profile .social-links a.cv-download .bx-download {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: -1px;
 }
 
 #main {
