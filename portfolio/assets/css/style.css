@@ -955,25 +955,26 @@ section:nth-of-type(even) {
     --border-color: #e0e0e0;
 }
 
-/* Buttons - Minimal Outline Style - Icon Only */
+/* Buttons - Minimal Outline Style */
 .btn-outline-primary,
 .btn-sm.btn-outline-primary {
     background-color: transparent;
     color: var(--text-primary);
     border-color: var(--text-primary);
     border-width: 1px;
-    font-weight: 400;
-    letter-spacing: 0.3px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
     transition: all 0.2s ease;
     white-space: nowrap;
     font-size: 0.75rem;
-    padding: 0.35rem 0.5rem !important;
+    padding: 0.35rem 0.65rem !important;
     line-height: 1;
     min-height: auto;
     width: auto;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 0.35rem;
 }
 .btn-outline-primary i {
     font-size: 0.9rem;
@@ -1267,7 +1268,7 @@ a:hover {
 /* Minimal icon styling */
 .btn-outline-primary i {
     font-size: 0.9rem;
-    margin-right: 0.25rem;
+    margin-right: 0;
 }
 
 /* Achievements Section - Consistent with Academic Style */
@@ -1594,4 +1595,135 @@ code, pre {
 .gprev,
 .gnext {
     display: none !important;
+}
+
+/*--------------------------------------------------------------
+# Experience
+--------------------------------------------------------------*/
+/* Inserting Experience after About would flip later nth-of-type bands. */
+#publications {
+    background-color: #f5f8fd;
+}
+
+#projects,
+#contact {
+    background-color: #ffffff;
+}
+
+#achievements {
+    background-color: #f5f8fd;
+}
+
+#experience .exp-company {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#experience .exp-company__logo {
+    flex-shrink: 0;
+    width: 96px;
+    height: 42px;
+    object-fit: contain;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    background-color: #000;
+}
+
+#experience .exp-company__name {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text-primary);
+}
+
+#experience .exp-company__duration {
+    margin: 0.2rem 0 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #6c757d;
+}
+
+#experience .exp-timeline {
+    position: relative;
+    margin-top: 1.35rem;
+    padding-left: 1.375rem;
+}
+
+#experience .exp-timeline::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 0.67rem;
+    bottom: 0.15rem;
+    width: 2px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    opacity: 0.4;
+}
+
+#experience .exp-role {
+    position: relative;
+    padding-bottom: 1.75rem;
+}
+
+#experience .exp-role:last-child {
+    padding-bottom: 0;
+}
+
+#experience .exp-role::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0.42rem;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid var(--accent-color);
+    box-sizing: border-box;
+}
+
+#experience .exp-role__head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.15rem;
+    margin-bottom: 0.55rem;
+}
+
+#experience .exp-role__title {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text-primary);
+}
+
+#experience .exp-role__dates {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #6c757d;
+}
+
+#experience .exp-role__point {
+    margin-bottom: 0.55rem;
+}
+
+#experience .exp-role__point:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 575px) {
+    #experience .exp-company {
+        align-items: flex-start;
+    }
 }
