@@ -1119,7 +1119,7 @@ a:hover {
 }
 
 /* Images - Consistent Styling */
-.card img {
+.card img:not(.exp-company__logo) {
     border-radius: 4px;
     max-height: 200px;
     width: auto;
@@ -1180,6 +1180,28 @@ a:hover {
 
 .card-content-wrapper.image-first .card-description {
     order: 2;
+}
+
+/* Keep publication and project media/text columns consistently proportioned. */
+@media (min-width: 992px) {
+    #publications .card-image,
+    #projects .card-image {
+        flex: 0 0 32%;
+        width: 32%;
+        max-width: none;
+    }
+
+    #publications .card-image .img-zoom-container,
+    #projects .card-image .img-zoom-container {
+        display: block;
+        width: 100%;
+    }
+
+    #publications .card-image img,
+    #projects .card-image img {
+        width: 100% !important;
+        object-fit: contain;
+    }
 }
 
 /* Responsive: Stack vertically on smaller screens */
@@ -1346,6 +1368,10 @@ a:hover {
     align-items: start;
     padding-bottom: 2.25rem;
     box-sizing: border-box;
+}
+
+#achievements .ach-timeline__cell {
+    grid-row: 1;
 }
 
 #achievements .ach-timeline__cell--axis {
@@ -1626,6 +1652,8 @@ code, pre {
     flex-shrink: 0;
     width: 96px;
     height: 42px;
+    max-width: 96px;
+    max-height: 42px;
     object-fit: contain;
     border-radius: 4px;
     border: 1px solid var(--border-color);
